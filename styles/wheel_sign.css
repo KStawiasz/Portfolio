@@ -1,0 +1,364 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lexend Zetta', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 9vh;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.toggler {
+    display: none;
+}
+
+.logo a {
+    color: #000000;
+    position: absolute;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    left: 30px;
+    top: 20px;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    right: -100%;
+    transition: all 0.5s ease;
+}
+
+nav li {
+    margin-top: 100px;
+}
+
+nav li a {
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #667783;
+    transition: ease-in .1s;
+}
+
+.toggler:checked~nav ul {
+    right: 0;
+}
+
+
+.burger {
+    position: absolute;
+    font-size: 20px;
+    color: #000000;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*content*/
+
+section{
+    text-transform: none;
+    letter-spacing: normal;
+    background-color: rgb(44, 44, 44);
+}
+
+img{
+    margin-top: 110px;
+    margin-left: 50px;
+}
+
+h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.submit-button {
+    padding: 5px;
+    width: 150pxpx;
+    height: auto;
+    cursor: pointer;
+    margin-top: 35px;
+    /*BOX*/
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    /*FONT*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    /*ANIMATION*/
+    transition: 0,5s;
+}
+
+.submit-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text input {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    background-color: none;
+    border: none;
+    border-bottom: 3px solid rgb(34, 100, 131);
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+input[type=date] {
+    border: none;
+    border-bottom: 3px solid rgb(34, 100, 131);
+    background-color: none; 
+    background-repeat: no-repeat;
+}
+
+       
+/*-----------------------------------------------*/
+/*footer*/
+
+.footer {
+    background: #ffffff;
+    padding: 50px;
+}
+
+.footer .footer-inf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+.footer .footer-inf h3 {
+    margin-bottom: 11px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.footer .footer-inf ul li a {
+    display: block;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+.footer .footer-inf>div {
+    margin: 12px 0;
+}
+
+.footer .footer-inf ul li a:hover {
+    font-weight: bold;
+}
+
+.footer .social {
+    text-align: center;
+}
+
+.footer .social ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer .social ul li a {
+    display: block;
+    margin: 0 15px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    color: #ffffff;
+    line-height: 50px;
+    border-radius: 3px;
+}
+
+.footer .social ul li a {
+    display: block;
+    margin: 0 15px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    color: #ffffff;
+    line-height: 50px;
+    border-radius: 3px;
+}
+
+.footer .social ul li a:hover {
+    color: #fff;
+}
+
+.footer .social ul li a.facebook:hover {
+    background: #3b5998;
+}
+
+.footer .social ul li a.twitter:hover {
+    background: #1da1f2;
+}
+
+.footer .social ul li a.instagram:hover {
+    background: #c32aa3;
+}
+
+.footer .social ul li a.whatsapp:hover {
+    background: #25d380;
+}
+
+.footer .social {
+    color: #000000;
+    font-size: 12px;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 900px) {
+
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    .fill{
+        background-image: url(../images/wheel.jpg);
+        background-size:cover;
+        background-repeat: no-repeat ;
+        background-position: center ;
+        margin-top: 10vh;
+        padding-bottom: 0px;
+    }
+
+    .main{
+        background-color: rgba(66, 66, 66, 0.795);
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+        
+
+    img{
+    display: none;
+    }
+    
+    input[type="text"] {
+        background-color: rgb(197, 197, 197);
+        border: none;
+        border-bottom: 3px solid rgb(34, 100, 131);
+    }
+    input[type="date"] {
+        background-color: rgb(197, 197, 197);
+        border: none;
+        border-bottom: 3px solid rgb(34, 100, 131);
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .footer .footer-inf {
+        flex-direction: row;
+        margin-bottom: 45px;
+        text-align: left;
+        justify-content: space-between;
+        padding: 0px 300px;
+    }
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 666px) {
+    img{
+        justify-content: space-around;
+        margin-top: 150px;
+        padding-top: 10px;
+        margin-left: 250px;
+    }
+    
+}
